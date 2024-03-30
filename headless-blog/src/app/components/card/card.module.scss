@@ -1,0 +1,50 @@
+.card_wrap{
+    container-type: inline-size;
+}
+
+.card{
+    display: flex;
+    gap: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 6px 7px 21px rgba(0, 0, 0, 0.11);
+
+    &_imageWrap,&_content{
+        flex: 1;
+    }
+
+    &_image{
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        min-height: 100%;
+        img{
+            object-fit: cover;
+        }
+    }
+
+    &_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 30px 30px 0;
+    }
+}
+
+@container (max-width: 700px){
+    .card{
+        flex-direction: column;
+        &_content{
+            padding: 0 30px 30px 30px;
+        }
+        &_label{
+            font-size: 16px;
+        }
+        &_title{
+            font-size: 24px;
+        }
+        &_summary{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blogs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "IsFeatured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Product Reviews",
+        "Opinions",
+        "Travel Guides"
+      ],
+      "required": true,
+      "default": "Product Reviews"
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "private": true
+    },
+    "Summary": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "unique": true
+    },
+    "PreviewImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "BlogImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Content": {
+      "type": "blocks",
+      "required": true
+    },
+    "btnContent": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Read More"
+    }
+  }
+}

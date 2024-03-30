@@ -1,0 +1,57 @@
+html, body{
+    font-size: 18px;
+}
+
+p{
+    margin: 0 0 30px;
+    line-height: 1.66;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    color: #000000;
+    font-family: var(--font-lato);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+    transition: 0.2s color;
+}
+
+[data-theme="dark"] h1, 
+[data-theme="dark"] .h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] .h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] .h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] .h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] .h5, 
+[data-theme="dark"] h6, 
+[data-theme="dark"] .h6{
+    color: #e9e9e9;
+    transition: 0.2s color;
+}
+
+h1, .h1{
+    font-size: 2.888rem;
+}
+
+h2, .h2{
+    font-size: 2.388rem;
+}
+
+h3, .h3{
+    font-size: 1.888rem;
+}
+
+h4, .h4{
+    font-size: 1.333rem;
+}
+
+h5, .h5{
+    font-size: 1.111rem;
+}
+
+h6, .h6{
+    font-size: 1rem;
+}

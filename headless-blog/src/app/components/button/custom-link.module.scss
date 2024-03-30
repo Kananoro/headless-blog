@@ -1,0 +1,21 @@
+.button{
+    display: inline-flex;
+    gap: 0.55rem;
+    align-items: center;
+    width: max-content;
+    padding: 0.55rem 1.111rem;
+    font-family: var(--font-lato);
+    font-weight: 600;
+    line-height: 0.75;
+    border-radius: 100px;
+    background-color: #154aea;
+    color: #f1f1f1;
+    text-decoration: none;
+    border: none;
+    transition: 0.2s background-color;
+}
+
+.button:hover{
+    background-color: #1442cb;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.c-orange{
+    color: #ff9300;
+}
+
+.c-purple{
+    color: #ae006f;
+}
+
+.c-green{
+    color: #00c873;
+}
+
+[data-theme="dark"] .c-orange{
+    color: #ff9300;
+}
+
+[data-theme="dark"] .c-purple{
+    color: #ae006f;
+}
+
+
+[data-theme="dark"] .c-green{
+    color: #00c873;
+}

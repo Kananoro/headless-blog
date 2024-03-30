@@ -1,0 +1,36 @@
+.blocksrenderer{
+    position: relative;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 6px 7px 21px rgba(0,0,0, 0.07);
+    }
+    code{
+        padding: 15px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.281);
+        border-radius: 5px;
+        border-left: 3px solid #29393b;
+    }
+    blockquote {
+        padding: 20px;
+        background: #eee;
+        border-radius: 5px;
+        quotes: "«" "»" "„" "“";
+        transition: 0.3s background;
+    }
+    blockquote::before {
+        content: open-quote;
+    }
+    blockquote::after {
+        content: close-quote;
+        
+    }
+}
+
+[data-theme="dark"] .blocksrenderer{
+    blockquote{
+        background: #444444;
+        transition: 0.3s background;
+    }
+}
